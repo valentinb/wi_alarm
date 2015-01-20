@@ -1,4 +1,4 @@
-from cross import time_printer_interface
+import time_printer_interface
 from i2c_7segments.Adafruit_7Segments import SevenSegments
 
 class TimePrinter(time_printer_interface.TimePrinterInterface):
