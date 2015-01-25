@@ -13,6 +13,21 @@ class RadioManager():
 		minutes = int(time.strftime("%M", time.localtime()))
 		if self.button.IsPressed():
 			os.system("omxplayer -o local sogipong.mp3")
+		if 10 == hours:
+			if 0 == minutes:
+				os.system("omxplayer -o local sogipong.mp3")
 		if 11 == hours:
-			if 9 == minutes:
+			if 0 == minutes:
+				os.system("omxplayer -o local sogipong.mp3")
+		if 14 == hours:
+			if 30 == minutes:
+				os.system("omxplayer -o local sogipong.mp3")
+		if 15 == hours:
+			if 30 == minutes:
+				os.system("omxplayer -o local sogipong.mp3")
+		if 16 == hours:
+			if 30 == minutes:
+				os.system("omxplayer -o local sogipong.mp3")
+		if 17 == hours:
+			if 30 == minutes:
 				os.system("omxplayer -o local sogipong.mp3")
