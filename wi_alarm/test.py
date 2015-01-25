@@ -1,10 +1,9 @@
-import pygst
-import gst
 import time
+import os
+from cross import button_gpio
 
-player = gst.element_factory_make("playbin", "player");
-player.set_property('uri', 'http://mp3channels.webradio.antenne.de/chillout')
-player.set_state(gst.STATE_PLAYING)
+button = button_gpio.Button()
 
 while True:
-    time.sleep(1)
+	if button.IsPressed():
+		os.system("ls")
